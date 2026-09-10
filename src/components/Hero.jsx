@@ -99,7 +99,7 @@ export default function Hero({ onExploreDemo }) {
         transition={{ duration: 1.0, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
         className="w-full relative -mt-4 sm:-mt-8 md:-mt-12 flex justify-center z-10 mb-0 pb-0 pointer-events-none"
       >
-        <div className="w-full max-w-[1440px] relative px-0 sm:px-2 flex justify-center">
+        <div className="w-full max-w-360 relative px-0 sm:px-2 flex justify-center">
           {/* Subtle Ambient Backlight Glow behind characters for 3D depth */}
           <div className="absolute inset-x-10 bottom-6 top-8 bg-radial from-sky-200/35 via-indigo-100/20 to-transparent blur-3xl pointer-events-none -z-10" />
 

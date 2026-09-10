@@ -188,10 +188,16 @@ export default function Footer() {
 
         {/* Bottom Legal & Credit Strip */}
         <div className="px-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-medium gap-4">
-          <div>
-            © 2025 CodeTracker. All rights reserved. Built with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 inline mx-0.5" /> by <a href="https://ofzen.in/" target="_blank" rel="noopener noreferrer" className="text-slate-800 font-bold hover:text-indigo-600 underline underline-offset-2 transition-colors">Ofzen</a>
+          <div className="text-center sm:text-left leading-relaxed">
+            <span>© 2025 CodeTracker. All rights reserved.</span>{' '}
+            <span className="block sm:inline mt-1 sm:mt-0 text-center">
+              Built with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 inline mx-0.5" /> by{' '}
+              <a href="https://ofzen.in/" target="_blank" rel="noopener noreferrer" className="text-slate-800 font-bold hover:text-indigo-600 underline underline-offset-2 transition-colors">
+                Ofzen
+              </a>
+            </span>
           </div>
-          <div className="flex items-center gap-5 text-[11px] text-slate-500">
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-5 text-[11px] text-slate-500">
             <a href="#contact" className="hover:text-indigo-600 transition-colors">Privacy Policy</a>
             <span>•</span>
             <a href="#contact" className="hover:text-indigo-600 transition-colors">Terms of Service</a>
