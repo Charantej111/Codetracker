@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, ShieldCheck, RefreshCw, Lock, Zap, ArrowUpRight, TrendingUp, Github, Activity, Database, Check } from 'lucide-react';
+import { RefreshCw, Lock, Zap, ArrowUpRight, TrendingUp, Github } from 'lucide-react';
 
 export default function PlatformHub() {
   return (
@@ -41,23 +41,25 @@ export default function PlatformHub() {
           <svg className="absolute inset-0 w-full h-full overflow-visible z-10" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid meet">
             <defs>
               <linearGradient id="arcGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#60A5FA" stopOpacity="0.2" />
-                <stop offset="50%" stopColor="#818CF8" stopOpacity="0.7" />
-                <stop offset="100%" stopColor="#38BDF8" stopOpacity="0.2" />
+                <stop offset="0%" stopColor="#60A5FA" stopOpacity="0" />
+                <stop offset="12%" stopColor="#60A5FA" stopOpacity="0.3" />
+                <stop offset="50%" stopColor="#818CF8" stopOpacity="0.75" />
+                <stop offset="88%" stopColor="#38BDF8" stopOpacity="0.3" />
+                <stop offset="100%" stopColor="#38BDF8" stopOpacity="0" />
               </linearGradient>
             </defs>
 
             {/* Inner Arc (Radius 140) */}
-            <path id="innerArcPath" d="M 260 360 A 140 140 0 0 1 540 360" stroke="#BFDBFE" strokeWidth="1.5" fill="none" strokeDasharray="3 3" />
-            <path d="M 260 360 A 140 140 0 0 1 540 360" stroke="url(#arcGlow)" strokeWidth="2.5" fill="none" />
+            <path id="innerArcPath" d="M 261 380 A 140 140 0 0 1 539 380" stroke="#BFDBFE" strokeWidth="1.5" fill="none" strokeDasharray="3 3" opacity="0.6" />
+            <path d="M 261 380 A 140 140 0 0 1 539 380" stroke="url(#arcGlow)" strokeWidth="2.5" fill="none" />
             
             {/* Middle Arc (Radius 230) */}
-            <path id="middleArcPath" d="M 170 360 A 230 230 0 0 1 630 360" stroke="#C7D2FE" strokeWidth="1.5" fill="none" />
-            <path d="M 170 360 A 230 230 0 0 1 630 360" stroke="url(#arcGlow)" strokeWidth="2.5" fill="none" />
+            <path id="middleArcPath" d="M 171 384 A 230 230 0 0 1 629 384" stroke="#C7D2FE" strokeWidth="1.5" fill="none" opacity="0.6" />
+            <path d="M 171 384 A 230 230 0 0 1 629 384" stroke="url(#arcGlow)" strokeWidth="2.5" fill="none" />
 
             {/* Outer Arc (Radius 320) */}
-            <path id="outerArcPath" d="M 80 360 A 320 320 0 0 1 720 360" stroke="#E0E7FF" strokeWidth="1.5" fill="none" strokeDasharray="4 4" />
-            <path d="M 80 360 A 320 320 0 0 1 720 360" stroke="url(#arcGlow)" strokeWidth="2" fill="none" />
+            <path id="outerArcPath" d="M 81 382 A 320 320 0 0 1 719 382" stroke="#E0E7FF" strokeWidth="1.5" fill="none" strokeDasharray="4 4" opacity="0.6" />
+            <path d="M 81 382 A 320 320 0 0 1 719 382" stroke="url(#arcGlow)" strokeWidth="2" fill="none" />
 
             {/* ============================================================ */}
             {/* PLATFORM BADGES INSTANTLY MOVING ON THE CONCENTRIC ARC PATHS */}
@@ -79,7 +81,8 @@ export default function PlatformHub() {
                   </div>
                 </div>
               </foreignObject>
-              <animateMotion path="M 260 360 A 140 140 0 0 1 540 360" dur="12s" repeatCount="indefinite" rotate="none" begin="0s" />
+              <animateMotion path="M 261 380 A 140 140 0 0 1 539 380" dur="12s" repeatCount="indefinite" rotate="none" begin="0s" />
+              <animate attributeName="opacity" values="0; 1; 1; 0" keyTimes="0; 0.08; 0.92; 1" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1" dur="12s" repeatCount="indefinite" begin="0s" />
             </g>
 
             {/* 2. LeetCode (Inner Arc - Staggered -4s, dur=12s) */}
@@ -96,7 +99,8 @@ export default function PlatformHub() {
                   </div>
                 </div>
               </foreignObject>
-              <animateMotion path="M 260 360 A 140 140 0 0 1 540 360" dur="12s" repeatCount="indefinite" rotate="none" begin="-4s" />
+              <animateMotion path="M 261 380 A 140 140 0 0 1 539 380" dur="12s" repeatCount="indefinite" rotate="none" begin="-4s" />
+              <animate attributeName="opacity" values="0; 1; 1; 0" keyTimes="0; 0.08; 0.92; 1" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1" dur="12s" repeatCount="indefinite" begin="-4s" />
             </g>
 
             {/* 3. AtCoder (Inner Arc - Staggered -8s, dur=12s) */}
@@ -113,7 +117,8 @@ export default function PlatformHub() {
                   </div>
                 </div>
               </foreignObject>
-              <animateMotion path="M 260 360 A 140 140 0 0 1 540 360" dur="12s" repeatCount="indefinite" rotate="none" begin="-8s" />
+              <animateMotion path="M 261 380 A 140 140 0 0 1 539 380" dur="12s" repeatCount="indefinite" rotate="none" begin="-8s" />
+              <animate attributeName="opacity" values="0; 1; 1; 0" keyTimes="0; 0.08; 0.92; 1" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1" dur="12s" repeatCount="indefinite" begin="-8s" />
             </g>
 
 
@@ -133,7 +138,8 @@ export default function PlatformHub() {
                   </div>
                 </div>
               </foreignObject>
-              <animateMotion path="M 170 360 A 230 230 0 0 1 630 360" dur="14s" repeatCount="indefinite" rotate="none" begin="0s" />
+              <animateMotion path="M 171 384 A 230 230 0 0 1 629 384" dur="14s" repeatCount="indefinite" rotate="none" begin="0s" />
+              <animate attributeName="opacity" values="0; 1; 1; 0" keyTimes="0; 0.08; 0.92; 1" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1" dur="14s" repeatCount="indefinite" begin="0s" />
             </g>
 
             {/* 5. HackerRank (Middle Arc - Staggered -7s, dur=14s) */}
@@ -150,7 +156,8 @@ export default function PlatformHub() {
                   </div>
                 </div>
               </foreignObject>
-              <animateMotion path="M 170 360 A 230 230 0 0 1 630 360" dur="14s" repeatCount="indefinite" rotate="none" begin="-7s" />
+              <animateMotion path="M 171 384 A 230 230 0 0 1 629 384" dur="14s" repeatCount="indefinite" rotate="none" begin="-7s" />
+              <animate attributeName="opacity" values="0; 1; 1; 0" keyTimes="0; 0.08; 0.92; 1" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1" dur="14s" repeatCount="indefinite" begin="-7s" />
             </g>
 
 
@@ -170,7 +177,8 @@ export default function PlatformHub() {
                   </div>
                 </div>
               </foreignObject>
-              <animateMotion path="M 80 360 A 320 320 0 0 1 720 360" dur="16s" repeatCount="indefinite" rotate="none" begin="0s" />
+              <animateMotion path="M 81 382 A 320 320 0 0 1 719 382" dur="16s" repeatCount="indefinite" rotate="none" begin="0s" />
+              <animate attributeName="opacity" values="0; 1; 1; 0" keyTimes="0; 0.08; 0.92; 1" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1" dur="16s" repeatCount="indefinite" begin="0s" />
             </g>
 
             {/* 7. GeeksforGeeks (Outer Arc - Staggered -8s, dur=16s) */}
@@ -187,7 +195,8 @@ export default function PlatformHub() {
                   </div>
                 </div>
               </foreignObject>
-              <animateMotion path="M 80 360 A 320 320 0 0 1 720 360" dur="16s" repeatCount="indefinite" rotate="none" begin="-8s" />
+              <animateMotion path="M 81 382 A 320 320 0 0 1 719 382" dur="16s" repeatCount="indefinite" rotate="none" begin="-8s" />
+              <animate attributeName="opacity" values="0; 1; 1; 0" keyTimes="0; 0.08; 0.92; 1" calcMode="spline" keySplines="0.4 0 0.2 1; 0 0 1 1; 0.4 0 0.2 1" dur="16s" repeatCount="indefinite" begin="-8s" />
             </g>
 
           </svg>
@@ -214,41 +223,35 @@ export default function PlatformHub() {
 
         </div>
 
-        {/* Product One Score Summary Box */}
-        <div className="max-w-md mx-auto bg-gradient-to-r from-emerald-50/80 via-white to-emerald-50/60 backdrop-blur-md rounded-2xl border border-emerald-200/90 p-4 sm:p-5 shadow-lg mb-8">
-          <div className="flex items-center gap-4">
-            <div className="relative shrink-0">
-              <div className="absolute inset-0 rounded-full bg-emerald-400/25 blur-md"></div>
-              <div className="relative w-12 h-12 rounded-full bg-emerald-100/90 border border-emerald-200 flex items-center justify-center shadow-xs">
-                <svg className="w-6 h-6 text-emerald-600" viewBox="0 0 24 24" fill="currentColor">
-                  <rect x="3" y="12" width="4.5" height="9" rx="2" />
-                  <rect x="9.75" y="5" width="4.5" height="16" rx="2" />
-                  <rect x="16.5" y="9" width="4.5" height="12" rx="2" />
-                </svg>
-              </div>
+        {/* Clean Metric Summary Bar */}
+        <div className="max-w-lg mx-auto mb-10 bg-white border border-slate-200/80 rounded-2xl p-4 sm:px-5 shadow-xs flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 shrink-0">
+              <TrendingUp className="w-5 h-5 stroke-[2.5]" />
             </div>
-
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-0.5">
-                <h3 className="font-extrabold text-slate-900 text-lg sm:text-xl tracking-tight">One Score</h3>
-                <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-700 font-extrabold text-[10px] flex items-center gap-1 border border-emerald-200">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> Unified Rating
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold text-slate-900">One Score</span>
+                <span className="text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">
+                  Unified Rating
                 </span>
               </div>
-
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
-                <span className="font-black text-emerald-600 text-3xl sm:text-4xl tracking-tight">1724</span>
-                <div className="text-xs">
-                  <span className="font-bold text-slate-800 block">Top 12% Global Rank</span>
-                  <span className="text-emerald-600 font-semibold flex items-center gap-0.5 text-[11px]">
-                    Better than yesterday <ArrowUpRight className="w-3 h-3" />
-                  </span>
-                </div>
-              </div>
-
-              <p className="text-slate-500 text-xs mt-1">
-                Calculated from performance across <span className="font-bold text-slate-800">6 coding platforms</span>
+              <p className="text-xs text-slate-500 mt-0.5">
+                Calculated across 6 coding platforms
               </p>
+            </div>
+          </div>
+
+          <div className="text-right shrink-0 border-l border-slate-100 pl-4">
+            <div className="flex items-baseline justify-end gap-1.5">
+              <span className="font-outfit font-black text-2xl text-slate-900 tracking-tight">1,724</span>
+              <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-1.5 py-0.5 rounded">
+                Top 12%
+              </span>
+            </div>
+            <div className="text-[11px] font-semibold text-emerald-600 flex items-center justify-end gap-0.5 mt-0.5">
+              <ArrowUpRight className="w-3 h-3" />
+              <span>Better than yesterday</span>
             </div>
           </div>
         </div>

@@ -40,8 +40,8 @@ export default function TrustedBy() {
           className="mt-5 text-slate-700 font-medium text-base sm:text-xl max-w-2xl mx-auto leading-relaxed"
         >
           Helping <strong className="text-indigo-600 font-extrabold">6,000+ Students</strong> at{' '}
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-indigo-50/90 text-indigo-700 font-extrabold border border-indigo-100 shadow-2xs">
-            <img src="/aditya_logo.jpg" alt="Aditya Logo" className="w-4 h-4 object-contain rounded-full" />
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg bg-indigo-50/90 text-indigo-700 text-xs sm:text-sm font-bold border border-indigo-100/80 shadow-2xs align-middle mx-0.5">
+            <img src="/aditya_logo.jpg" alt="Aditya Logo" className="w-3.5 h-3.5 object-contain rounded-full" />
             Aditya University
           </span>{' '}
           track, compete, and grow every day.

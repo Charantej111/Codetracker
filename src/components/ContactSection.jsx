@@ -43,11 +43,6 @@ export default function ContactSection({ onShowToast }) {
             className="lg:col-span-5 space-y-8"
           >
             <div>
-              <span className="px-4 py-1.5 rounded-full bg-indigo-600/10 text-indigo-700 font-semibold text-xs tracking-wider uppercase inline-flex items-center gap-2 mb-4 border border-indigo-200/80 shadow-xs backdrop-blur-md">
-                <span className="w-2 h-2 rounded-full bg-indigo-600 animate-ping" />
-                Campus Onboarding & Support
-              </span>
-
               <h2 className="font-outfit font-black text-3xl sm:text-5xl text-slate-900 tracking-tight leading-tight">
                 Get Your College <br />
                 <span className="bg-gradient-to-r from-indigo-600 via-indigo-500 to-sky-500 bg-clip-text text-transparent">Onboarded Today.</span>
@@ -98,27 +93,9 @@ export default function ContactSection({ onShowToast }) {
             </div>
 
             {/* Dark Glass Callout Box */}
-            <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-7 shadow-2xl relative overflow-hidden border border-slate-800 group">
-              <div className="absolute -top-10 -right-10 w-40 h-40 bg-indigo-500/20 blur-2xl rounded-full pointer-events-none" />
 
-              <div className="relative z-10">
-                <div className="flex items-center gap-2 text-sky-400 text-xs font-bold uppercase tracking-wider mb-2">
-                  <Rocket className="w-4 h-4 text-sky-400" /> Fast-Track Implementation
-                </div>
-                <h3 className="font-outfit font-extrabold text-xl mb-2 text-white">Schedule a Campus Walkthrough</h3>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                  See how 80,000+ students and faculty use CodeTracker to automate profile tracking and placement rankings.
-                </p>
-                <a
-                  href="mailto:support@codetracker.in?subject=Campus%20Demo%20Request"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs rounded-xl transition-all shadow-lg shadow-indigo-600/30 hover:scale-105"
-                >
-                  Schedule Personal Demo →
-                </a>
-              </div>
-            </div>
           </motion.div>          {/* Right Column: Ultra-Aesthetic Paper Sheet Note Contact Form */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 25 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -131,13 +108,13 @@ export default function ContactSection({ onShowToast }) {
             {/* 3D Metallic Paper Clip Graphic */}
             <div className="absolute -top-3 left-10 sm:left-16 z-20 pointer-events-none drop-shadow-md">
               <svg width="44" height="76" viewBox="0 0 32 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 12V44C12 48.4183 15.5817 52 20 52C24.4183 52 28 48.4183 28 44V16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16V46" stroke="url(#contact_paperclip_metallic)" strokeWidth="3.5" strokeLinecap="round"/>
+                <path d="M12 12V44C12 48.4183 15.5817 52 20 52C24.4183 52 28 48.4183 28 44V16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16V46" stroke="url(#contact_paperclip_metallic)" strokeWidth="3.5" strokeLinecap="round" />
                 <defs>
                   <linearGradient id="contact_paperclip_metallic" x1="0" y1="0" x2="32" y2="64" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#94A3B8"/>
-                    <stop offset="0.3" stopColor="#F8FAFC"/>
-                    <stop offset="0.6" stopColor="#64748B"/>
-                    <stop offset="1" stopColor="#475569"/>
+                    <stop stopColor="#94A3B8" />
+                    <stop offset="0.3" stopColor="#F8FAFC" />
+                    <stop offset="0.6" stopColor="#64748B" />
+                    <stop offset="1" stopColor="#475569" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -151,7 +128,7 @@ export default function ContactSection({ onShowToast }) {
             </div>
 
             {/* Tactile Paper Sheet Overlay */}
-            <div 
+            <div
               className="absolute inset-0 opacity-35 pointer-events-none mix-blend-multiply"
               style={{
                 backgroundImage: `url('/paper_sheet_note.png')`,
@@ -161,7 +138,7 @@ export default function ContactSection({ onShowToast }) {
             />
 
             <div className="relative z-10 pl-6 sm:pl-10">
-              
+
               {/* Note Header */}
               <div className="mb-8 pb-4 border-b border-stone-200/80">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100/90 text-amber-900 text-[11px] font-bold uppercase tracking-wider mb-2 border border-amber-200/80">

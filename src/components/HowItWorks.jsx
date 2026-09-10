@@ -1,13 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Building2, UserPlus, RefreshCw, Trophy, ArrowRight } from 'lucide-react';
 
 const HOW_IT_WORKS_STEPS = [
   {
     stepNum: "1",
     badgeBg: "bg-indigo-600 text-white shadow-md shadow-indigo-600/30",
-    pillIcon: Building2,
-    pillTitle: "College Registers",
     title: "Set Up Your College",
     desc: "Verify your college, invite faculty administrators, and set up your portal in minutes.",
     img: "/step-1.png",
@@ -17,8 +14,6 @@ const HOW_IT_WORKS_STEPS = [
   {
     stepNum: "2",
     badgeBg: "bg-emerald-600 text-white shadow-md shadow-emerald-600/30",
-    pillIcon: UserPlus,
-    pillTitle: "Students Join",
     title: "Onboard Students",
     desc: "Students join your portal and securely link their coding profiles with institutional email.",
     img: "/step-2.png",
@@ -28,8 +23,6 @@ const HOW_IT_WORKS_STEPS = [
   {
     stepNum: "3",
     badgeBg: "bg-blue-600 text-white shadow-md shadow-blue-600/30",
-    pillIcon: RefreshCw,
-    pillTitle: "Profiles Sync",
     title: "Automatic Rating Sync",
     desc: "CodeTracker syncs data from 6+ platforms automatically 24/7 to keep student ratings fresh.",
     img: "/step-3.png",
@@ -39,8 +32,6 @@ const HOW_IT_WORKS_STEPS = [
   {
     stepNum: "4",
     badgeBg: "bg-amber-500 text-white shadow-md shadow-amber-500/30",
-    pillIcon: Trophy,
-    pillTitle: "Track & Compete",
     title: "Track, Compete & Grow",
     desc: "Track progress, compete in contests, climb leaderboards and land top tech jobs.",
     img: "/step-4.png",
@@ -90,7 +81,6 @@ export default function HowItWorks() {
         {/* 4 Storytelling Step Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
           {HOW_IT_WORKS_STEPS.map((item, idx) => {
-            const PillIcon = item.pillIcon;
             return (
               <motion.div
                 key={idx}
@@ -101,15 +91,11 @@ export default function HowItWorks() {
                 className={`rounded-3xl border p-6 flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-1.5 group ${item.accentColor}`}
               >
                 <div>
-                  {/* Top Badge & Pill Header */}
-                  <div className="flex items-center justify-between mb-4">
+                  {/* Step Number */}
+                  <div className="mb-4">
                     <span className={`w-9 h-9 rounded-2xl flex items-center justify-center font-outfit font-black text-sm ${item.badgeBg}`}>
                       {item.stepNum}
                     </span>
-                    <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 border border-slate-200/80 shadow-2xs">
-                      <PillIcon className="w-3.5 h-3.5 text-indigo-600" />
-                      <span className="font-mono text-[10px] font-bold text-slate-700">{item.pillTitle}</span>
-                    </div>
                   </div>
 
                   {/* Title & Description */}
