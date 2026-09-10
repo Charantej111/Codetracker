@@ -19,18 +19,18 @@ export default function App() {
   const [showDemoModal, setShowDemoModal] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-indigo-600 selection:text-white relative bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:28px_28px]">
+    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-indigo-600 selection:text-white relative bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] bg-size-[28px_28px]">
       {/* Top Landing Header & Hero Container with Full Blue Grainy Mesh Background */}
       <div className="relative overflow-hidden">
         {/* Exclusive Blue Grainy Gradient Mesh Background (Full Landing Page including Navbar) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           {/* Base Soft Blue Mesh Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#EAF2FF] via-[#F4F8FE] to-[#DCEBFF] opacity-100" />
+          <div className="absolute inset-0 bg-linear-to-br from-[#EAF2FF] via-[#F4F8FE] to-[#DCEBFF] opacity-100" />
           
           {/* Soft Glowing Blue Clouds matching the uploaded image */}
-          <div className="absolute -top-16 left-1/4 w-[550px] h-[550px] rounded-full bg-sky-300/40 blur-3xl" />
-          <div className="absolute top-1/4 -right-10 w-[500px] h-[500px] rounded-full bg-blue-400/25 blur-3xl" />
-          <div className="absolute bottom-10 left-1/3 w-[650px] h-[450px] rounded-full bg-sky-200/35 blur-3xl" />
+          <div className="absolute -top-16 left-1/4 w-137.5 h-137.5 rounded-full bg-sky-300/40 blur-3xl" />
+          <div className="absolute top-1/4 -right-10 w-125 h-125 rounded-full bg-blue-400/25 blur-3xl" />
+          <div className="absolute bottom-10 left-1/3 w-162.5 h-112.5 rounded-full bg-sky-200/35 blur-3xl" />
 
           {/* Tactile Grain Texture Overlay */}
           <div 

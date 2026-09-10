@@ -96,7 +96,7 @@ export default function CtaBanner() {
           <img 
             src="/paper_sheet_note.png" 
             alt="Authentic Paper Note" 
-            className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-none select-none min-h-[340px] sm:min-h-[440px]"
+            className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.3)] pointer-events-none select-none min-h-85 sm:min-h-110"
           />
 
           {/* Text Content Overlay positioned carefully inside paper bounds */}
@@ -110,7 +110,7 @@ export default function CtaBanner() {
               className="inline-flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-4 cursor-pointer"
             >
               <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-cyan-500 text-white flex items-center justify-center shadow-xs">
-                <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[3]" />
+                <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-3" />
               </div>
               <span className="font-outfit font-extrabold text-base sm:text-2xl tracking-tight text-slate-900">
                 Code<span className="text-indigo-600">Tracker</span>
@@ -125,8 +125,8 @@ export default function CtaBanner() {
               className="font-outfit font-black text-lg sm:text-4xl md:text-5xl tracking-tight text-slate-900 leading-tight"
             >
               Track.{' '}
-              <span className="font-serif italic font-normal text-indigo-600">Analyze.</span>{' '}
-              <span className="font-mono text-slate-900 underline decoration-indigo-400 decoration-wavy underline-offset-4">Grow.</span>
+              <span className="text-indigo-600">Analyze.</span>{' '}
+              <span>Grow.</span>
             </motion.h2>
 
             {/* Subtitle */}
@@ -134,7 +134,7 @@ export default function CtaBanner() {
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.5 }}
-              className="mt-2 sm:mt-4 text-slate-600 font-jakarta text-[11px] sm:text-base max-w-[240px] sm:max-w-md mx-auto font-medium leading-relaxed"
+              className="mt-2 sm:mt-4 text-slate-600 font-jakarta text-[11px] sm:text-base max-w-60 sm:max-w-md mx-auto font-medium leading-relaxed"
             >
               All your coding journey. Unified in one platform.
             </motion.p>

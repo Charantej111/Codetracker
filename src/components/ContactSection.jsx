@@ -24,11 +24,11 @@ export default function ContactSection({ onShowToast }) {
   };
 
   return (
-    <section id="contact" className="py-24 font-jakarta relative overflow-hidden bg-gradient-to-br from-[#F4F8FE] via-[#EAF2FF] to-[#E2EEFF]">
+    <section id="contact" className="py-24 font-jakarta relative overflow-hidden bg-linear-to-br from-[#F4F8FE] via-[#EAF2FF] to-[#E2EEFF]">
 
       {/* Background Glowing Ambient Light Orbs */}
       <div className="absolute top-1/4 -left-20 w-96 h-96 rounded-full bg-sky-300/30 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-[500px] h-[500px] rounded-full bg-indigo-300/25 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-125 h-125 rounded-full bg-indigo-300/25 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -45,7 +45,7 @@ export default function ContactSection({ onShowToast }) {
             <div>
               <h2 className="font-outfit font-black text-3xl sm:text-5xl text-slate-900 tracking-tight leading-tight">
                 Get Your College <br />
-                <span className="bg-gradient-to-r from-indigo-600 via-indigo-500 to-sky-500 bg-clip-text text-transparent">Onboarded Today.</span>
+                <span className="text-indigo-600">Onboarded Today.</span>
               </h2>
 
               <p className="mt-4 text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
@@ -62,8 +62,8 @@ export default function ContactSection({ onShowToast }) {
                 </div>
                 <div>
                   <span className="text-xs text-slate-400 block font-normal">Official Email</span>
-                  <a href="mailto:support@codetracker.in" className="hover:text-indigo-600 font-bold transition-colors text-slate-900">
-                    support@codetracker.in
+                  <a href="mailto:support@ofzen.in" className="hover:text-indigo-600 font-bold transition-colors text-slate-900">
+                    support@ofzen.in
                   </a>
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default function ContactSection({ onShowToast }) {
                 <div>
                   <span className="text-xs text-slate-400 block font-normal">Direct Helpline</span>
                   <a href="tel:+919876543210" className="hover:text-indigo-600 font-bold transition-colors text-slate-900">
-                    +91 98765 43210
+                    +91 9493780803
                   </a>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function ContactSection({ onShowToast }) {
 
             {/* Top-Right Campus Stamp Badge */}
             <div className="absolute top-6 right-6 z-20 pointer-events-none hidden sm:block">
-              <div className="px-3 py-1 rounded border-2 border-dashed border-indigo-600/40 text-indigo-700 font-mono text-[10px] uppercase font-bold tracking-widest bg-amber-50/90 rotate-[3deg] shadow-xs">
+              <div className="px-3 py-1 rounded border-2 border-dashed border-indigo-600/40 text-indigo-700 font-mono text-[10px] uppercase font-bold tracking-widest bg-amber-50/90 rotate-3 shadow-xs">
                 OFFICIAL CAMPUS NOTE
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function ContactSection({ onShowToast }) {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 9493780803"
                       className="w-full px-4.5 py-3.5 rounded-xl border border-stone-300/80 focus:border-indigo-600 focus:ring-4 focus:ring-indigo-600/10 outline-none text-slate-900 text-sm font-medium transition-all bg-[#F3EFE7] focus:bg-white shadow-inner"
                     />
                   </div>

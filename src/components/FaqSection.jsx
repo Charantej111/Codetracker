@@ -33,7 +33,7 @@ export default function FaqSection() {
   const [openIdx, setOpenIdx] = useState(0);
 
   return (
-    <section id="faq" className="py-24 font-jakarta relative overflow-hidden bg-gradient-to-b from-white via-slate-50/80 to-[#F4F8FE]">
+    <section id="faq" className="py-24 font-jakarta relative overflow-hidden bg-linear-to-b from-white via-slate-50/80 to-[#F4F8FE]">
 
       {/* Background Soft Glow Orbs */}
       <div className="absolute top-1/3 right-0 w-96 h-96 rounded-full bg-indigo-200/30 blur-3xl pointer-events-none" />
@@ -60,7 +60,7 @@ export default function FaqSection() {
 
               <h2 className="font-outfit font-black text-3xl sm:text-4xl text-slate-900 leading-tight">
                 Frequently Asked <br />
-                <span className="bg-gradient-to-r from-indigo-600 to-sky-500 bg-clip-text text-transparent">Questions</span>
+                <span className="text-indigo-600">Questions</span>
               </h2>
 
               <p className="mt-4 text-slate-600 text-sm leading-relaxed font-normal">
@@ -94,7 +94,7 @@ export default function FaqSection() {
                 <div
                   key={idx}
                   className={`rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen
-                    ? 'border-indigo-300 bg-gradient-to-r from-white via-indigo-50/20 to-sky-50/20 shadow-lg shadow-indigo-950/5'
+                    ? 'border-indigo-300 bg-linear-to-r from-white via-indigo-50/20 to-sky-50/20 shadow-lg shadow-indigo-950/5'
                     : 'border-slate-200/90 bg-white/90 hover:border-indigo-200 hover:shadow-md'
                     }`}
                 >

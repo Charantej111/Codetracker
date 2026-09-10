@@ -118,10 +118,10 @@ export default function RoleOutcomes() {
             ROLE BASED OUTCOMES
           </span>
 
-          <h2 className="font-sf-rounded font-black text-3xl sm:text-5xl md:text-6xl text-slate-900 tracking-tight leading-tight">
+          <h2 className="font-outfit font-black text-3xl sm:text-5xl md:text-6xl text-slate-900 tracking-tight leading-tight">
             One Platform. Every Role. <br />
-            <span className="bg-gradient-to-r from-[#6B21A8] via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              Better Outcomes
+            <span className="text-indigo-600">
+              Better Outcomes.
             </span>
           </h2>
 
@@ -138,7 +138,7 @@ export default function RoleOutcomes() {
               <button
                 key={dash.id}
                 onClick={() => setCurrentIndex(idx)}
-                className={`px-5 py-2.5 rounded-full font-sf-rounded font-extrabold text-xs sm:text-sm transition-all cursor-pointer ${
+                className={`px-5 py-2.5 rounded-full font-outfit font-extrabold text-xs sm:text-sm transition-all cursor-pointer ${
                   isActive
                     ? 'bg-slate-900 text-white shadow-md scale-105'
                     : 'bg-white text-slate-600 border border-slate-200 hover:border-purple-300'
@@ -169,7 +169,7 @@ export default function RoleOutcomes() {
                     {current.badgeText}
                   </span>
 
-                  <h3 className="font-sf-rounded font-extrabold text-3xl text-slate-900 leading-tight">
+                  <h3 className="font-outfit font-extrabold text-3xl text-slate-900 leading-tight">
                     {current.roleName} <span className={current.accentColor}>{current.roleSuffix}</span>
                   </h3>
 
@@ -195,7 +195,7 @@ export default function RoleOutcomes() {
                   <div className="mt-8">
                     <a
                       href="#contact"
-                      className={`px-6 py-3 rounded-full text-white font-sf-rounded font-bold text-sm shadow-md hover:scale-105 transition-all inline-flex items-center gap-2 ${current.buttonBg}`}
+                      className={`px-6 py-3 rounded-full text-white font-outfit font-bold text-sm shadow-md hover:scale-105 transition-all inline-flex items-center gap-2 ${current.buttonBg}`}
                     >
                       {current.buttonText}
                     </a>
@@ -227,7 +227,7 @@ export default function RoleOutcomes() {
                   <div>
                     <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-100">
                       <div>
-                        <h3 className="font-sf-rounded font-extrabold text-2xl text-slate-900 flex items-center gap-2">
+                        <h3 className="font-outfit font-extrabold text-2xl text-slate-900 flex items-center gap-2">
                           Hey Charan 👋
                         </h3>
                         <p className="text-xs text-slate-500 font-medium">Keep coding, keep growing!</p>
@@ -246,7 +246,7 @@ export default function RoleOutcomes() {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
                       <motion.div initial={{ scale: 0.95 }} animate={{ scale: 1 }} transition={{ delay: 0.1 }} className="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:shadow-md transition-shadow">
                         <div className="text-[11px] text-slate-500 uppercase font-bold tracking-wider">CURRENT RATING</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1 flex items-center gap-2">
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1 flex items-center gap-2">
                           1847
                           <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded-full">📈 +42</span>
                         </div>
@@ -255,19 +255,19 @@ export default function RoleOutcomes() {
 
                       <motion.div initial={{ scale: 0.95 }} animate={{ scale: 1 }} transition={{ delay: 0.15 }} className="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:shadow-md transition-shadow">
                         <div className="text-[11px] text-slate-500 uppercase font-bold tracking-wider">GLOBAL RANK</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">#23,045</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">#23,045</div>
                         <div className="text-[11px] text-slate-500 font-medium mt-1">Top 2.1% globally</div>
                       </motion.div>
 
                       <motion.div initial={{ scale: 0.95 }} animate={{ scale: 1 }} transition={{ delay: 0.2 }} className="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:shadow-md transition-shadow">
                         <div className="text-[11px] text-slate-500 uppercase font-bold tracking-wider">SOLVED PROBLEMS</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">1,250</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">1,250</div>
                         <div className="text-[11px] text-slate-500 font-medium mt-1">Across all platforms</div>
                       </motion.div>
 
                       <motion.div initial={{ scale: 0.95 }} animate={{ scale: 1 }} transition={{ delay: 0.25 }} className="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:shadow-md transition-shadow">
                         <div className="text-[11px] text-slate-500 uppercase font-bold tracking-wider">CURRENT STREAK 🔥</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-amber-600 mt-1">27 days</div>
+                        <div className="font-outfit font-extrabold text-2xl text-amber-600 mt-1">27 days</div>
                         <div className="flex gap-1 mt-2">
                           <div className="w-3 h-1 bg-indigo-600 rounded-full" />
                           <div className="w-3 h-1 bg-indigo-600 rounded-full" />
@@ -279,7 +279,7 @@ export default function RoleOutcomes() {
 
                     <div className="mt-8">
                       <div className="flex items-center justify-between text-xs font-bold text-slate-900 mb-3">
-                        <span className="font-sf-rounded text-base">Platform Ratings</span>
+                        <span className="font-outfit text-base">Platform Ratings</span>
                         <span className="text-indigo-600 flex items-center gap-1 cursor-pointer hover:underline">View All ↗</span>
                       </div>
 
@@ -287,28 +287,28 @@ export default function RoleOutcomes() {
                         <div className="p-4 rounded-2xl border border-slate-200/80 text-center hover:scale-105 transition-transform bg-white shadow-xs">
                           <div className="text-orange-500 text-lg mb-1">📊</div>
                           <div className="text-xs text-slate-600 font-bold">Codeforces</div>
-                          <div className="font-sf-rounded font-extrabold text-lg text-slate-900">1621</div>
+                          <div className="font-outfit font-extrabold text-lg text-slate-900">1621</div>
                           <span className="text-[10px] font-bold text-amber-600 uppercase">EXPERT</span>
                         </div>
 
                         <div className="p-4 rounded-2xl border border-slate-200/80 text-center bg-indigo-50/30 hover:scale-105 transition-transform shadow-xs">
                           <div className="text-yellow-500 text-lg mb-1">⚡</div>
                           <div className="text-xs text-slate-600 font-bold">LeetCode</div>
-                          <div className="font-sf-rounded font-extrabold text-lg text-slate-900">1847</div>
+                          <div className="font-outfit font-extrabold text-lg text-slate-900">1847</div>
                           <span className="text-[10px] font-bold text-indigo-600 uppercase">KNIGHT</span>
                         </div>
 
                         <div className="p-4 rounded-2xl border border-slate-200/80 text-center hover:scale-105 transition-transform bg-white shadow-xs">
                           <div className="text-teal-500 text-lg mb-1">👨‍🍳</div>
                           <div className="text-xs text-slate-600 font-bold">CodeChef</div>
-                          <div className="font-sf-rounded font-extrabold text-lg text-slate-900">2011</div>
+                          <div className="font-outfit font-extrabold text-lg text-slate-900">2011</div>
                           <span className="text-[10px] font-bold text-teal-600 uppercase">5 STAR</span>
                         </div>
 
                         <div className="p-4 rounded-2xl border border-slate-200/80 text-center hover:scale-105 transition-transform bg-white shadow-xs">
                           <div className="text-purple-500 text-lg mb-1">🎯</div>
                           <div className="text-xs text-slate-600 font-bold">AtCoder</div>
-                          <div className="font-sf-rounded font-extrabold text-lg text-slate-900">1234</div>
+                          <div className="font-outfit font-extrabold text-lg text-slate-900">1234</div>
                           <span className="text-[10px] font-bold text-emerald-600 uppercase">GREEN</span>
                         </div>
                       </div>
@@ -350,7 +350,7 @@ export default function RoleOutcomes() {
                   <div>
                     <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-100">
                       <div>
-                        <h3 className="font-sf-rounded font-extrabold text-2xl text-slate-900">
+                        <h3 className="font-outfit font-extrabold text-2xl text-slate-900">
                           Welcome back!
                         </h3>
                         <p className="text-xs text-slate-500 font-medium">Here's your placement overview.</p>
@@ -369,32 +369,32 @@ export default function RoleOutcomes() {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
                       <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }} className="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100 hover:shadow-md transition-all">
                         <div className="text-xs text-slate-500 font-medium">Eligible Students</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">412</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">412</div>
                         <div className="text-[11px] text-orange-600 font-bold mt-1">100%</div>
                       </motion.div>
 
                       <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.15 }} className="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100 hover:shadow-md transition-all">
                         <div className="text-xs text-slate-500 font-medium">Placement Ready</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">278</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">278</div>
                         <div className="text-[11px] text-slate-600 font-bold mt-1">67.5%</div>
                       </motion.div>
 
                       <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100 hover:shadow-md transition-all">
                         <div className="text-xs text-slate-500 font-medium">Offers Received</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">96</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">96</div>
                         <div className="text-[11px] text-slate-600 font-bold mt-1">23.3%</div>
                       </motion.div>
 
                       <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.25 }} className="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100 hover:shadow-md transition-all">
                         <div className="text-xs text-slate-500 font-medium">Avg. Coding Score</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">1724</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">1724</div>
                         <div className="text-[11px] text-emerald-600 font-bold mt-1">Excellent</div>
                       </motion.div>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-8">
                       <div className="lg:col-span-8">
-                        <div className="font-sf-rounded font-bold text-sm text-slate-900 mb-3">Top Placement Ready Students</div>
+                        <div className="font-outfit font-bold text-sm text-slate-900 mb-3">Top Placement Ready Students</div>
                         <div className="space-y-2 text-xs font-jakarta">
                           <div className="p-3 rounded-xl border border-slate-200/80 flex items-center justify-between hover:border-orange-300 transition-colors bg-white">
                             <div className="flex items-center gap-3">
@@ -436,7 +436,7 @@ export default function RoleOutcomes() {
 
                       <div className="lg:col-span-4 p-4 rounded-2xl border border-slate-200/80 text-center flex flex-col items-center justify-center bg-white">
                         <div className="text-xs font-bold text-slate-800 mb-2">Placement Readiness</div>
-                        <div className="w-24 h-24 rounded-full border-8 border-orange-500 flex items-center justify-center font-sf-rounded font-extrabold text-base text-slate-900 shadow-md">
+                        <div className="w-24 h-24 rounded-full border-8 border-orange-500 flex items-center justify-center font-outfit font-extrabold text-base text-slate-900 shadow-md">
                           67.5%
                         </div>
                         <div className="text-[11px] text-slate-500 mt-3 space-y-1 text-left">
@@ -454,7 +454,7 @@ export default function RoleOutcomes() {
                   <div>
                     <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-100">
                       <div>
-                        <h3 className="font-sf-rounded font-extrabold text-2xl text-slate-900 flex items-center gap-2">
+                        <h3 className="font-outfit font-extrabold text-2xl text-slate-900 flex items-center gap-2">
                           Welcome back, Dr. Priya 👋
                         </h3>
                         <p className="text-xs text-slate-500 font-medium">Here's what's happening in your department.</p>
@@ -473,25 +473,25 @@ export default function RoleOutcomes() {
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
                       <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }} className="p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100 hover:shadow-md transition-all">
                         <div className="text-xs text-slate-500 font-medium">Total Students</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">320</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">320</div>
                         <div className="text-[11px] text-emerald-700 font-semibold mt-1">📈 +12 this week</div>
                       </motion.div>
 
                       <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.15 }} className="p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100 hover:shadow-md transition-all">
                         <div className="text-xs text-slate-500 font-medium">Active Students</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">268</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">268</div>
                         <div className="text-[11px] text-slate-600 font-semibold mt-1">83.7% Attendance</div>
                       </motion.div>
 
                       <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100 hover:shadow-md transition-all">
                         <div className="text-xs text-slate-500 font-medium">Problems Solved</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">4,732</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">4,732</div>
                         <div className="text-[11px] text-emerald-700 font-semibold mt-1">📈 +10.4%</div>
                       </motion.div>
 
                       <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.25 }} className="p-4 rounded-2xl bg-emerald-50/50 border border-emerald-100 hover:shadow-md transition-all">
                         <div className="text-xs text-slate-500 font-medium">Contests Conducted</div>
-                        <div className="font-sf-rounded font-extrabold text-2xl text-slate-900 mt-1">5</div>
+                        <div className="font-outfit font-extrabold text-2xl text-slate-900 mt-1">5</div>
                         <div className="text-[11px] text-slate-500 font-semibold mt-1">This month</div>
                       </motion.div>
                     </div>
@@ -499,7 +499,7 @@ export default function RoleOutcomes() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-8">
                       <div className="lg:col-span-8 p-4 rounded-2xl border border-slate-200/80 bg-white">
                         <div className="flex justify-between text-xs font-bold text-slate-900 mb-3">
-                          <span className="font-sf-rounded">Activity Overview</span>
+                          <span className="font-outfit">Activity Overview</span>
                           <span className="text-emerald-700">🟢 PROBLEMS SOLVED</span>
                         </div>
                         <div className="h-32 flex items-end justify-between gap-2 pt-4">
@@ -519,7 +519,7 @@ export default function RoleOutcomes() {
 
                       <div className="lg:col-span-4 p-4 rounded-2xl border border-slate-200/80 bg-white">
                         <div className="flex justify-between text-xs font-bold text-slate-900 mb-3">
-                          <span className="font-sf-rounded">Top Performers</span>
+                          <span className="font-outfit">Top Performers</span>
                           <span className="text-emerald-700 cursor-pointer hover:underline">View All</span>
                         </div>
                         <div className="space-y-2 text-xs">
@@ -546,7 +546,7 @@ export default function RoleOutcomes() {
                   <div>
                     <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-100">
                       <div>
-                        <h3 className="font-sf-rounded font-extrabold text-2xl text-slate-900">
+                        <h3 className="font-outfit font-extrabold text-2xl text-slate-900">
                           Find Top Coding Talent
                         </h3>
                         <p className="text-xs text-slate-500 font-medium">Search and filter the best candidates from your campus.</p>
@@ -554,7 +554,7 @@ export default function RoleOutcomes() {
                     </div>
 
                     <div className="mt-4 flex flex-wrap gap-2 text-xs font-bold">
-                      <div className="flex-1 min-w-[200px] relative">
+                      <div className="flex-1 min-w-50 relative">
                         <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2.5" />
                         <input
                           type="text"
@@ -632,7 +632,7 @@ export default function RoleOutcomes() {
                 {/* Bottom Carousel Arrows Navigation Bar */}
                 <div className="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
                   <span className="text-xs text-slate-500 font-medium">
-                    Role {currentIndex + 1} of {DASHBOARDS.length}: <strong className="text-slate-900 font-sf-rounded">{current.roleName} {current.roleSuffix}</strong>
+                    Role {currentIndex + 1} of {DASHBOARDS.length}: <strong className="text-slate-900 font-outfit">{current.roleName} {current.roleSuffix}</strong>
                   </span>
 
                   <div className="flex items-center gap-3">

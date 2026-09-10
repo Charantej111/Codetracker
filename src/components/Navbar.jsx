@@ -10,7 +10,7 @@ export default function Navbar() {
         
         {/* Brand Logo */}
         <a href="#hero" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-slate-900 via-indigo-900 to-blue-600 flex items-center justify-center text-white shadow-md shadow-slate-900/20 group-hover:scale-105 transition-transform">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-linear-to-tr from-slate-900 via-indigo-900 to-blue-600 flex items-center justify-center text-white shadow-md shadow-slate-900/20 group-hover:scale-105 transition-transform">
             <Code2 className="w-5 h-5 stroke-[2.5]" />
           </div>
           <span className="font-outfit font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900">

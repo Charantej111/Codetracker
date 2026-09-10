@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import {
   TrendingUp,
@@ -8,27 +8,12 @@ import {
   Twitter,
   Instagram,
   Youtube,
-  Heart,
-  Sparkles,
-  Check
+  Heart
 } from 'lucide-react';
 
 export default function Footer() {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (!email.trim() || !email.includes('@')) return;
-    setSubscribed(true);
-    setTimeout(() => {
-      setEmail('');
-      setSubscribed(false);
-    }, 3500);
-  };
-
   return (
-    <footer id="footer" className="relative font-jakarta text-slate-900 pt-16 sm:pt-20 pb-12 overflow-hidden border-t border-slate-200/80 bg-gradient-to-b from-white via-slate-50/50 to-indigo-50/20">
+    <footer id="footer" className="relative font-jakarta text-slate-900 pt-16 sm:pt-20 pb-12 overflow-hidden border-t border-slate-200/80 bg-linear-to-b from-white via-slate-50/50 to-indigo-50/20">
 
       {/* Subtle ambient lighting glows */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -47,16 +32,16 @@ export default function Footer() {
           className="bg-white/80 backdrop-blur-xl border border-slate-200/80 rounded-3xl sm:rounded-[36px] p-6 sm:p-10 shadow-xl shadow-slate-900/5 mb-8"
         >
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
 
-            {/* 1. Left Brand & Newsletter Box (Col 4) */}
-            <div className="lg:col-span-4 space-y-5 flex flex-col justify-between">
+            {/* 1. Left Brand Column (Col 4) */}
+            <div className="lg:col-span-4 md:col-span-1 space-y-6">
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {/* Brand Logo */}
                 <a href="#" className="inline-flex items-center gap-2.5 group">
                   <div className="w-10 h-10 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-lg shadow-indigo-600/30 group-hover:scale-105 transition-transform">
-                    <TrendingUp className="w-5 h-5 stroke-[3]" />
+                    <TrendingUp className="w-5 h-5 stroke-3" />
                   </div>
                   <span className="font-outfit font-black text-2xl tracking-tight text-slate-900">
                     Code<span className="text-indigo-600">Tracker</span>
@@ -64,94 +49,57 @@ export default function Footer() {
                 </a>
 
                 {/* Description */}
-                <p className="text-slate-600 text-xs sm:text-sm font-medium leading-relaxed">
+                <p className="text-slate-600 text-xs sm:text-sm font-medium leading-relaxed max-w-sm">
                   The all-in-one platform to track coding progress, analyze performance, and help students become placement ready.
                 </p>
-
-                {/* Stay in the loop Newsletter Card */}
-                <div className="p-4 rounded-2xl bg-slate-50/90 border border-slate-200/80 shadow-xs space-y-2">
-                  <div className="flex items-center gap-2 font-extrabold text-xs text-slate-900">
-                    <div className="w-6 h-6 rounded-lg bg-indigo-600 text-white flex items-center justify-center shadow-xs">
-                      <Sparkles className="w-3.5 h-3.5" />
-                    </div>
-                    <span>Stay in the loop</span>
-                  </div>
-                  <p className="text-[11px] text-slate-600 font-medium leading-normal">
-                    Get latest updates, insights and placement tips straight to your inbox.
-                  </p>
-                  <form onSubmit={handleSubscribe} className="flex items-center gap-1.5 pt-1">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email"
-                      required
-                      className="flex-1 bg-white border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-indigo-600 focus:ring-1 focus:ring-indigo-500/20 shadow-xs transition-colors"
-                    />
-                    <button
-                      type="submit"
-                      aria-label="Subscribe"
-                      className="w-8.5 h-8.5 bg-indigo-600 hover:bg-slate-900 text-white rounded-xl flex items-center justify-center shrink-0 shadow-md shadow-indigo-600/30 transition-colors cursor-pointer"
-                    >
-                      {subscribed ? (
-                        <Check className="w-4 h-4 stroke-[3]" />
-                      ) : (
-                        <ArrowRight className="w-4 h-4 stroke-[3]" />
-                      )}
-                    </button>
-                  </form>
-                  {subscribed && (
-                    <p className="text-[10px] font-semibold text-emerald-600 pt-0.5">
-                      Thanks for subscribing!
-                    </p>
-                  )}
-                </div>
               </div>
 
+
+
               {/* Social Icons */}
-              <div className="flex items-center gap-2 pt-2">
-                <a 
-                  href="https://linkedin.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+              <div className="flex items-center gap-2 pt-1">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-indigo-600 hover:border-indigo-200 hover:shadow-xs transition-all"
+                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-white hover:bg-indigo-600 hover:border-indigo-600 hover:shadow-xs transition-all"
                 >
                   <Linkedin className="w-4 h-4" />
                 </a>
-                <a 
-                  href="https://twitter.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Twitter"
-                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-indigo-600 hover:border-indigo-200 hover:shadow-xs transition-all"
+                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-white hover:bg-indigo-600 hover:border-indigo-600 hover:shadow-xs transition-all"
                 >
                   <Twitter className="w-4 h-4" />
                 </a>
-                <a 
-                  href="https://instagram.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-indigo-600 hover:border-indigo-200 hover:shadow-xs transition-all"
+                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-white hover:bg-indigo-600 hover:border-indigo-600 hover:shadow-xs transition-all"
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
-                <a 
-                  href="https://youtube.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="YouTube"
-                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-indigo-600 hover:border-indigo-200 hover:shadow-xs transition-all"
+                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-white hover:bg-indigo-600 hover:border-indigo-600 hover:shadow-xs transition-all"
                 >
                   <Youtube className="w-4 h-4" />
                 </a>
-                <a 
-                  href="https://github.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="GitHub"
-                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-indigo-600 hover:border-indigo-200 hover:shadow-xs transition-all"
+                  className="w-8.5 h-8.5 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:text-white hover:bg-indigo-600 hover:border-indigo-600 hover:shadow-xs transition-all"
                 >
                   <Github className="w-4 h-4" />
                 </a>
@@ -160,7 +108,7 @@ export default function Footer() {
             </div>
 
             {/* 2. Middle Nav Columns: Quick Links & For Colleges (Col 4) */}
-            <div className="lg:col-span-4 grid grid-cols-2 gap-6 text-xs py-2">
+            <div className="lg:col-span-4 md:col-span-1 grid grid-cols-2 gap-6 text-xs pt-1">
 
               {/* Quick Links */}
               <div>
@@ -191,42 +139,38 @@ export default function Footer() {
             </div>
 
             {/* 3. Right Callout Card (Col 4) with Seamless Integrated Campus Landscape Illustration */}
-            <div className="lg:col-span-4">
-              <div className="h-full bg-gradient-to-b from-white via-slate-50/90 to-indigo-50/50 border border-slate-200/80 rounded-3xl p-6 sm:p-7 shadow-sm flex flex-col justify-between text-center relative overflow-hidden group min-h-[380px]">
+            <div className="lg:col-span-4 md:col-span-2">
+              <div className="bg-linear-to-b from-white via-slate-50/90 to-indigo-50/50 border border-slate-200/80 rounded-3xl p-6 sm:p-7 shadow-sm flex flex-col justify-between text-center relative overflow-hidden group">
 
                 {/* Callout Header */}
                 <div className="space-y-2 relative z-10 pt-1">
                   <h3 className="font-outfit font-black text-xl sm:text-2xl text-slate-900 tracking-tight leading-snug">
                     Let's build the future of coding education <span className="text-indigo-600 underline decoration-indigo-300 decoration-wavy underline-offset-4">together</span>
                   </h3>
-                  <p className="text-xs text-slate-600 font-medium">
-                    Join 120+ top institutions empowering their students.
-                  </p>
                 </div>
 
                 {/* Call to action buttons */}
-                <div className="space-y-2.5 my-4 relative z-10">
+                <div className="flex flex-col sm:flex-row lg:flex-row gap-2 my-4 relative z-10">
                   <a
                     href="#contact"
-                    className="w-full py-3.5 px-4 rounded-xl bg-indigo-600 hover:bg-slate-900 text-white font-outfit font-extrabold text-xs shadow-lg shadow-indigo-600/30 hover:scale-[1.02] transition-all flex items-center justify-center gap-2"
+                    className="flex-1 py-3 px-3 rounded-xl bg-indigo-600 hover:bg-slate-900 text-white font-outfit font-extrabold text-xs shadow-md shadow-indigo-600/25 hover:scale-[1.01] transition-all flex items-center justify-center gap-1.5"
                   >
-                    <span>Book a Demo</span>
-                    <ArrowRight className="w-4 h-4 stroke-[2.5]" />
+                    <span>Book Demo</span>
+                    <ArrowRight className="w-3.5 h-3.5 stroke-[2.5]" />
                   </a>
 
                   <a
                     href="#contact"
-                    className="w-full py-3.5 px-4 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-900 font-outfit font-extrabold text-xs hover:border-indigo-300 shadow-xs transition-all flex items-center justify-center gap-2"
+                    className="flex-1 py-3 px-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-900 font-outfit font-extrabold text-xs hover:border-indigo-300 shadow-xs transition-all flex items-center justify-center gap-1.5"
                   >
-                    <span>Get Started Free</span>
-                    <ArrowRight className="w-4 h-4 stroke-[2.5]" />
+                    <span>Get Started</span>
                   </a>
                 </div>
 
-                {/* Integrated Full-Bleed Campus Illustration at Card Bottom */}
-                <div className="absolute inset-x-0 bottom-0 h-44 sm:h-48 overflow-hidden rounded-b-3xl pointer-events-none z-0">
+                {/* Integrated Campus Illustration at Card Bottom */}
+                <div className="h-32 -mx-6 -mb-6 sm:-mx-7 sm:-mb-7 overflow-hidden relative pointer-events-none rounded-b-3xl">
                   {/* Top Blend Gradient */}
-                  <div className="absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-white/95 via-white/60 to-transparent z-10" />
+                  <div className="absolute inset-x-0 top-0 h-10 bg-linear-to-b from-white/95 via-white/50 to-transparent z-10" />
 
                   <img
                     src="/college_illustration.jpg"

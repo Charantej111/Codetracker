@@ -51,7 +51,7 @@ export default function Hero({ onExploreDemo }) {
           initial={{ filter: 'blur(14px)', opacity: 0, y: 25, scale: 0.95 }}
           animate={{ filter: 'blur(0px)', opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
-          className="font-bangers text-3xl sm:text-5xl md:text-6xl tracking-wider uppercase text-slate-900 max-w-5xl mx-auto leading-none drop-shadow-xs"
+          className="font-outfit font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight uppercase text-slate-900 max-w-5xl mx-auto leading-tight"
         >
           LEVEL UP YOUR CODE GAME <span className="text-indigo-600">!!</span>
         </motion.h1>
@@ -92,26 +92,30 @@ export default function Hero({ onExploreDemo }) {
 
       </div>
 
-      {/* Full Page Width Hero Image Showcase - Extended Flush to Bottom SVG Curve */}
+      {/* Hero Image Showcase - Full Uncropped Community Illustration Framed by Bottom Curve */}
       <motion.div 
-        initial={{ filter: 'blur(16px)', opacity: 0, y: 30, scale: 0.96 }}
+        initial={{ filter: 'blur(16px)', opacity: 0, y: 24, scale: 0.98 }}
         animate={{ filter: 'blur(0px)', opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 1.0, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
-        className="w-full relative -mt-4 sm:-mt-8 md:-mt-12 flex justify-center z-10 mb-0 pb-0"
+        className="w-full relative -mt-4 sm:-mt-8 md:-mt-12 flex justify-center z-10 mb-0 pb-0 pointer-events-none"
       >
-        <div className="w-full max-w-7xl relative overflow-hidden">
+        <div className="w-full max-w-[1440px] relative px-0 sm:px-2 flex justify-center">
+          {/* Subtle Ambient Backlight Glow behind characters for 3D depth */}
+          <div className="absolute inset-x-10 bottom-6 top-8 bg-radial from-sky-200/35 via-indigo-100/20 to-transparent blur-3xl pointer-events-none -z-10" />
+
           <img
             src="/hero image.png"
             onError={(e) => {
               e.target.onerror = null;
               e.target.src = "/hero-group.png";
             }}
-            alt="CodeTracker Landing Banner"
-            className="w-full h-[440px] sm:h-[560px] md:h-[640px] object-cover object-top transition-transform duration-500"
+            alt="CodeTracker Community"
+            className="w-full h-auto object-contain object-bottom select-none drop-shadow-[0_15px_35px_rgba(30,58,138,0.12)] transition-transform duration-500 translate-y-2 sm:translate-y-4 md:translate-y-6"
+            style={{
+              maskImage: 'linear-gradient(to right, transparent 0%, black 2.5%, black 97.5%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 2.5%, black 97.5%, transparent 100%)'
+            }}
           />
-
-          {/* Soft Bottom Fade Overlay directly blending into curve */}
-          <div className="absolute inset-x-0 bottom-0 h-24 sm:h-36 md:h-44 bg-gradient-to-t from-white via-white/40 to-transparent pointer-events-none z-10" />
         </div>
       </motion.div>
 
