@@ -4,11 +4,11 @@ import { RefreshCw, Lock, Zap, ArrowUpRight, TrendingUp, Github } from 'lucide-r
 
 export default function PlatformHub() {
   return (
-    <section id="platform-hub" className="py-20 font-jakarta relative overflow-hidden bg-white">
+    <section id="platform-hub" className="py-12 sm:py-16 md:py-20 font-jakarta relative overflow-hidden bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Senior Product Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-10">
           
           {/* Animated UNIFIED PLATFORM ENGINE Badge */}
           <motion.div 
@@ -16,29 +16,29 @@ export default function PlatformHub() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-600/10 text-indigo-700 font-bold text-xs tracking-wider uppercase mb-3 border border-indigo-200/80 shadow-xs backdrop-blur-md"
+            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-600/10 text-indigo-700 font-bold text-[11px] sm:text-xs tracking-wider uppercase mb-2 sm:mb-3 border border-indigo-200/80 shadow-xs backdrop-blur-md"
           >
-            <span className="relative flex h-2.5 w-2.5">
+            <span className="relative flex h-2 sm:h-2.5 w-2 sm:w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-500 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-indigo-600"></span>
+              <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-indigo-600"></span>
             </span>
             <span>UNIFIED PLATFORM ENGINE</span>
           </motion.div>
 
-          <h2 className="font-outfit font-black text-3xl sm:text-5xl text-slate-900 tracking-tight leading-tight">
+          <h2 className="font-outfit font-black text-2xl sm:text-4xl md:text-5xl text-slate-900 tracking-tight leading-tight">
             All Your Coding Platforms. <br />
             <span className="text-indigo-600">One Seamless Integration Hub.</span>
           </h2>
-          <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+          <p className="mt-2 sm:mt-3 text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
             CodeTracker automatically aggregates your rating, contest rank, and submission streaks into a single verified score.
           </p>
         </div>
 
-        {/* Concentric Arc Network Hub Canvas with Fast-Starting Animated Moving Badges */}
-        <div className="relative w-full max-w-4xl mx-auto h-[400px] sm:h-[460px] md:h-[500px] my-2 flex items-end justify-center overflow-hidden">
+        {/* Concentric Arc Network Hub Canvas with Well-Calibrated Responsive Height */}
+        <div className="relative w-full max-w-4xl mx-auto h-[270px] sm:h-[360px] md:h-[450px] my-1 sm:my-2 flex items-end justify-center overflow-hidden">
           
-          {/* SVG Concentric Arcs & Motion Canvas */}
-          <svg className="absolute inset-0 w-full h-full overflow-visible z-10" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid meet">
+          {/* SVG Concentric Arcs & Motion Canvas with Top Headroom Padding */}
+          <svg className="absolute inset-0 w-full h-full overflow-hidden z-10" viewBox="0 -20 800 480" preserveAspectRatio="xMidYMid meet">
             <defs>
               <linearGradient id="arcGlow" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="#60A5FA" stopOpacity="0" />
@@ -202,21 +202,21 @@ export default function PlatformHub() {
           </svg>
 
           {/* Central CodeTracker Node Orb at Concentric Anchor */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center z-20 pointer-events-auto">
+          <div className="absolute bottom-1 sm:bottom-3 md:bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center z-20 pointer-events-auto">
             <div className="relative flex items-center justify-center">
               {/* Soft Ambient Radial Glow */}
-              <div className="absolute w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-indigo-500/10 blur-xl pointer-events-none"></div>
+              <div className="absolute w-20 h-20 sm:w-32 sm:h-32 md:w-44 md:h-44 rounded-full bg-indigo-500/10 blur-xl pointer-events-none"></div>
               
               {/* Dual Ring Central Glass Orb */}
-              <div className="relative w-22 h-22 sm:w-26 sm:h-26 rounded-full bg-white shadow-[0_16px_45px_rgba(79,70,229,0.22)] border-4 border-slate-50 ring-8 ring-indigo-50/70 flex items-center justify-center hover:scale-105 transition-transform duration-300 group cursor-pointer">
-                <div className="w-13 h-13 sm:w-16 sm:h-16 rounded-2xl bg-slate-900 flex items-center justify-center text-white shadow-md group-hover:bg-indigo-600 transition-colors">
-                  <TrendingUp className="w-7 h-7 sm:w-8 sm:h-8 stroke-[2.5]" />
+              <div className="relative w-12 h-12 sm:w-18 sm:h-18 md:w-26 md:h-26 rounded-full bg-white shadow-[0_12px_35px_rgba(79,70,229,0.2)] border-2 sm:border-4 border-slate-50 ring-4 sm:ring-6 md:ring-8 ring-indigo-50/70 flex items-center justify-center hover:scale-105 transition-transform duration-300 group cursor-pointer">
+                <div className="w-7 h-7 sm:w-11 sm:h-11 md:w-16 md:h-16 rounded-lg sm:rounded-2xl bg-slate-900 flex items-center justify-center text-white shadow-md group-hover:bg-indigo-600 transition-colors">
+                  <TrendingUp className="w-3.5 h-3.5 sm:w-5 sm:h-5 md:w-8 md:h-8 stroke-[2.5]" />
                 </div>
               </div>
             </div>
             
-            <h4 className="font-extrabold text-slate-900 text-sm sm:text-base mt-2.5 tracking-tight">CodeTracker</h4>
-            <span className="mt-0.5 px-2.5 py-0.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 font-mono text-[10px] font-bold tracking-wider uppercase shadow-2xs">
+            <h4 className="font-extrabold text-slate-900 text-xs sm:text-sm md:text-base mt-1 sm:mt-2 tracking-tight">CodeTracker</h4>
+            <span className="mt-0.5 px-2 sm:px-2.5 py-0.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 font-mono text-[8px] sm:text-[9px] md:text-[10px] font-bold tracking-wider uppercase shadow-2xs hidden sm:inline-block">
               VERIFIED AGGREGATOR
             </span>
           </div>
@@ -224,7 +224,7 @@ export default function PlatformHub() {
         </div>
 
         {/* Clean Metric Summary Bar */}
-        <div className="max-w-lg mx-auto mb-10 bg-white border border-slate-200/80 rounded-2xl p-4 sm:px-5 shadow-xs flex items-center justify-between gap-4">
+        <div className="max-w-lg mx-auto mt-3 sm:mt-5 mb-8 sm:mb-10 bg-white border border-slate-200/80 rounded-2xl p-3.5 sm:p-4 sm:px-5 shadow-xs flex items-center justify-between gap-3 sm:gap-4">
           <div className="flex items-center gap-3.5">
             <div className="w-10 h-10 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 shrink-0">
               <TrendingUp className="w-5 h-5 stroke-[2.5]" />
