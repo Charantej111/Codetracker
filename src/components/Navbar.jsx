@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-3 sm:top-4 z-50 px-4 sm:px-6 lg:px-8 transition-all pointer-events-none">
       <div className="max-w-6xl mx-auto bg-white/80 backdrop-blur-xl border border-white/70 shadow-lg shadow-slate-900/5 rounded-full px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between pointer-events-auto transition-all hover:bg-white/90 hover:shadow-xl hover:shadow-slate-900/10">
-        
+
         {/* Brand Logo */}
         <a href="#hero" className="flex items-center gap-2.5 group">
           <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-linear-to-tr from-slate-900 via-indigo-900 to-blue-600 flex items-center justify-center text-white shadow-md shadow-slate-900/20 group-hover:scale-105 transition-transform">
@@ -40,13 +40,13 @@ export default function Navbar() {
         {/* Right CTA Actions */}
         <div className="hidden md:flex items-center gap-2 sm:gap-3 font-jakarta text-xs sm:text-sm font-semibold">
           <a
-            href="#contact"
+            href="https://student.codetracker.ofzen.in"
             className="px-4 py-2 text-slate-700 hover:text-indigo-600 border border-slate-200/80 hover:border-indigo-300 rounded-full transition-all hover:bg-indigo-50/60"
           >
             Log In
           </a>
           <a
-            href="#contact"
+            href="https://student.codetracker.ofzen.in"
             className="px-5 py-2 bg-slate-900 hover:bg-indigo-600 text-white rounded-full shadow-md shadow-slate-900/10 hover:shadow-lg hover:shadow-indigo-600/20 hover:scale-[1.03] transition-all flex items-center gap-1.5"
           >
             Get Started
