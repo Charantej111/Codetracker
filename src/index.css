@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@700&family=Nunito:wght@800;900&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .font-bangers {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.04em;
+  }
+  
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+  }
+  
+  .font-jakarta {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  .font-outfit {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .font-sf-rounded {
+    font-family: 'SF Pro Rounded', 'Nunito', 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  .text-purple-brand {
+    color: #6B21A8;
+  }
+
+  .bg-purple-brand {
+    background-color: #6B21A8;
+  }
+
+  .border-purple-brand {
+    border-color: #6B21A8;
+  }
+
+  .bg-glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 20px 50px -12px rgba(107, 33, 168, 0.08);
+  }
+
+  /* 3D Chrome Metallic Text Gradient */
+  .text-chrome-metallic {
+    background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 30%, #475569 50%, #94A3B8 75%, #F8FAFC 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.9));
+  }
+
+  /* Footer Glossy Glass Box */
+  .footer-glass-box {
+    background: linear-gradient(180deg, rgba(30, 38, 56, 0.75) 0%, rgba(14, 18, 27, 0.92) 50%, rgba(7, 9, 15, 0.98) 100%);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 25px 60px -15px rgba(0, 0, 0, 0.9);
+  }
+}
+
+/* Data Flow Animation for Platform Hub */
+@keyframes dataFlowForward {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-data-flow {
+  stroke-dasharray: 6 6;
+  animation: dataFlowForward 1.2s linear infinite;
+}
+
+@keyframes orbitRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbitRotate 25s linear infinite;
+}
+
+@keyframes pulseCore {
+  0%, 100% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 60px rgba(79, 70, 229, 0.6);
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-core {
+  animation: pulseCore 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
