@@ -40,13 +40,7 @@ export default function Navbar() {
         {/* Right CTA Actions */}
         <div className="hidden md:flex items-center gap-2 sm:gap-3 font-jakarta text-xs sm:text-sm font-semibold">
           <a
-            href="https://student.codetracker.ofzen.in"
-            className="px-4 py-2 text-slate-700 hover:text-indigo-600 border border-slate-200/80 hover:border-indigo-300 rounded-full transition-all hover:bg-indigo-50/60"
-          >
-            Log In
-          </a>
-          <a
-            href="https://student.codetracker.ofzen.in"
+            href="#contact"
             className="px-5 py-2 bg-slate-900 hover:bg-indigo-600 text-white rounded-full shadow-md shadow-slate-900/10 hover:shadow-lg hover:shadow-indigo-600/20 hover:scale-[1.03] transition-all flex items-center gap-1.5"
           >
             Get Started
@@ -95,13 +89,6 @@ export default function Navbar() {
             FAQ
           </a>
           <div className="pt-3 flex flex-col gap-2">
-            <a
-              href="#contact"
-              onClick={() => setMobileOpen(false)}
-              className="w-full py-2.5 text-center text-slate-700 font-bold border border-slate-200 rounded-full hover:bg-slate-50"
-            >
-              Log In
-            </a>
             <a
               href="#contact"
               onClick={() => setMobileOpen(false)}
