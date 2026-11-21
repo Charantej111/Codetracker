@@ -145,3 +145,32 @@ In the project root directory, you can run:
 
 - Designed & developed with ❤️ by the **[Ofzen](https://ofzen.in/)** engineering team.
 - © 2025 CodeTracker. All rights reserved.
+
+
+---
+
+## 🧭 Product Perspective
+
+### Problem
+Students and institutions often have coding performance distributed across multiple competitive programming platforms. CodeTracker brings that fragmented information into a unified product experience.
+
+### Users
+- Students tracking coding progress and placement readiness.
+- Faculty and mentors monitoring student development.
+- Placement teams evaluating cohort performance.
+- Institutions looking for a consolidated view of coding activity.
+
+### My contribution
+I worked across the product rather than in a single isolated function. My contribution included product thinking, UX, frontend execution, technical implementation, validation, and iteration. The exact ownership varied by feature and stage, so this README intentionally does not claim sole ownership of the entire platform.
+
+### Product decisions
+- Consolidating multiple platform profiles into one student experience.
+- Designing separate workflows for students, faculty, placement teams, and institutional users.
+- Turning raw coding activity into interpretable rankings, progress signals, and readiness views.
+- Balancing product experience with the constraints of external platform data.
+
+### Outcomes
+The repository currently states that CodeTracker is used by **120+ institutions**. This figure is retained from the existing project documentation and should be kept only if it remains current and verifiable.
+
+### Product learning
+Building CodeTracker reinforced an important product lesson: aggregating data is not enough. The product becomes useful when fragmented information is transformed into decisions and workflows for each user group.
